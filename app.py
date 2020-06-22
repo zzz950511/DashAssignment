@@ -29,10 +29,10 @@ def getSum(subjectName):
     avg= sum/ (len(Marks))
     return round(avg,2)
 
-mAwt = getSum('Awt')
-mP2P = getSum('P2P')
-mIoT = getSum('IoT')
-mNIO = getSum('NIO')
+mAdvWebTech = getSum('Awt')
+mBDLA = getSum('P2P')
+mLA = getSum('IoT')
+mLAVA = getSum('NIO')
 
 
 
@@ -45,10 +45,10 @@ def getDuration(subjectName):
     avg= sum/ (len(Durations))
     return round(avg,2)
 
-dAwt = getDuration('Awt')
-dP2P = getDuration('P2P')
-dIoT = getDuration('IoT')
-dNIO = getDuration('NIO')
+dAdvWebTech = getDuration('Awt')
+dBDLA = getDuration('P2P')
+dLA = getDuration('IoT')
+dLAVA = getDuration('NIO')
 
 
 app.layout = html.Div(children=[
@@ -56,20 +56,29 @@ app.layout = html.Div(children=[
         html.Div(className='row', children=[
             html.Div(className='six columns',
                 children=[
-                    html.H1('Dash Assignment', style={'color': 'Red','float':'left'})
+                    html.H1('Dash Assignment', style={'color': 'black','float':'left'})
                 ])
         ]),
         html.Div(className='row', children=[
             html.Div(className='four columns',
                 children=[
-                    html.H1('Select Students', style={'color': 'black','float': 'left','font-size':'16pt'}),
-                    html.Img(src = 'NXGEN.png', height = '50', style = {'float':'right'}),
+                    html.H1('Select Students', style={'color': 'black','float': 'left','font-size':'16pt'})
+                ]),
+            html.Div(className='four columns',
+                children=[
+                    html.H1('Last clicked course information', style={'color': 'black', 'float': 'left','font-size':'16pt'})
                 ]),
         ]),
         html.Div(className='row', children=[
             html.Div(className='four columns',
                 children=[
                     generate_Dropdown(list_of_names),
+                ]),
+            html.Div(className='four columns',
+                children=[
+                    html.H1('No course clicked ingrades graph', style={'color': 'darkgrey', 'float': 'left','font-size':'12pt'}),
+                    html.H1('No course clicked ingrades graph', style={'color': 'darkgrey', 'float': 'left','font-size':'12pt'})
+
                 ]),
         ]),
             html.Div(className='twelve columns', style={'marginTop': 50, },
@@ -94,7 +103,7 @@ def update_graph(student_name_value):
         return{
                 'data': [dict(
                 x=['Awt', 'P2P', 'IoT', 'NIO'],
-                y=[ mAwt, mP2P,mIoT, mNIO],
+                y=[ mAdvWebTech, mBDLA, mLA, mLAVA],
 
                 marker={'color': colors['marker_color']},
                 type = 'bar'
@@ -173,7 +182,7 @@ def dot_Chart(student_name_value):
         return{
                 'data': [dict(
                 x=['Awt', 'P2P', 'IoT', 'NIO'],
-                y=[ dAwt, dP2P, dIoT, dNIO],
+                y=[ dAdvWebTech, dBDLA, dLA, dLAVA],
                 mode='markers',
                 marker={
                     'size':15,
