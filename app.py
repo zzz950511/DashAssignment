@@ -65,22 +65,12 @@ app.layout = html.Div(children=[
                     html.H1('Select Students', style={'color': 'black','float': 'left','font-size':'16pt'}),
                     html.Img(src = 'NXGEN.png', height = '50', style = {'float':'right'}),
                 ]),
-            # html.Div(className='four columns',
-            #     children=[
-            #         html.H1('Last clicked course information', style={'color': 'black', 'float': 'left','font-size':'16pt'})
-            #     ]),
         ]),
         html.Div(className='row', children=[
             html.Div(className='four columns',
                 children=[
                     generate_Dropdown(list_of_names),
                 ]),
-            # html.Div(className='four columns',
-            #     children=[
-            #         html.H1('No course clicked ingrades graph', style={'color': 'darkgrey', 'float': 'left','font-size':'12pt'}),
-            #         html.H1('No course clicked ingrades graph', style={'color': 'darkgrey', 'float': 'left','font-size':'12pt'})
-
-            #     ]),
         ]),
             html.Div(className='twelve columns', style={'marginTop': 50, },
             children=([
