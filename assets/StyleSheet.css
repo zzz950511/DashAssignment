@@ -1,0 +1,23 @@
+.home{
+background-color:rgb(30, 255, 0);
+}
+
+.light-blue{
+background-color: #daf542;
+height:400px
+}
+.text-white{
+color:white;
+}
+.marginB{
+margin-bottom:20px}
+.marginTop{
+margin-top:20px
+}
+.mt-3{
+margin-top:2rem
+}
+.dropdownStyle{
+margin-left:190px;
+width:500px;
+}
