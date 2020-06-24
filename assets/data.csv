@@ -1,0 +1,21 @@
+courses,students,grades,week_hours
+AdvWebTech,Student 1,1,5
+AdvWebTech,Student 2,1.3,2
+AdvWebTech,Student 3,2,4
+AdvWebTech,Student 4,3,2
+AdvWebTech,Student 5,4,6
+LA,Student 1,1.3,5
+LA,Student 2,1,4
+LA,Student 3,1,6
+LA,Student 4,2,2
+LA,Student 5,3,3
+LAVA,Student 1,1,8
+LAVA,Student 2,1,4
+LAVA,Student 3,1,6
+LAVA,Student 4,1.3,5
+LAVA,Student 5,2,1
+BDLA,Student 1,2.7,3
+BDLA,Student 2,1.7,6
+BDLA,Student 3,2,8
+BDLA,Student 4,1.3,5
+BDLA,Student 5,5,5
